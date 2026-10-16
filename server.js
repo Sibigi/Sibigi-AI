@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, '/')));
 
 // Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, '/src/index.html'));
 });
 
 // API Endpoint for AI Response (Backend route)

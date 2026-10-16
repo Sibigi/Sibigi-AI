@@ -1,1 +1,5 @@
-
+Sibigi-AI Environment Variables Configuration
+​PORT=3000
+NODE_ENV=development
+​AI API Key Placeholder (e.g. OpenAI / Google Gemini API Key)
+​AI_API_KEY=your_api_key_here

@@ -1,0 +1,10 @@
+{
+  "name": "sibigi-ai",
+  "version": "1.0.0",
+  "description": "Sibigi AI Web Service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}

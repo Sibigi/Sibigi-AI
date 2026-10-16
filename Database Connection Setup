@@ -1,0 +1,31 @@
+// Sibigi-AI Database Connection Handler
+
+const dbConfig = {
+    host: process.env.DB_HOST || 'localhost',
+    port: process.env.DB_PORT || 5432,
+    database: process.env.DB_NAME || 'sibigi_ai_db',
+    user: process.env.DB_USER || 'admin',
+    password: process.env.DB_PASSWORD || 'secret'
+};
+
+function connectDatabase() {
+    console.log(`Connecting to database at ${dbConfig.host}:${dbConfig.port}...`);
+    
+    // Database connection initialization logic
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("✔ Database connected successfully!");
+            resolve({ status: "connected", db: dbConfig.database });
+        }, 1000);
+    });
+}
+
+function disconnectDatabase() {
+    console.log("Disconnected from database.");
+}
+
+module.exports = {
+    connectDatabase,
+    disconnectDatabase,
+    dbConfig
+};

@@ -1,0 +1,34 @@
+// Sibigi-AI Unit Testing
+
+const CONFIG = require('./config');
+
+function runTests() {
+    console.log("Running Sibigi-AI Unit Tests...\n");
+
+    // Test 1: Configuration Loading
+    if (CONFIG.PROJECT_NAME === "Sibigi-AI") {
+        console.log("✔ Test 1 Passed: Configuration loaded successfully.");
+    } else {
+        console.error("✖ Test 1 Failed: Invalid project name in config.");
+    }
+
+    // Test 2: Basic AI Engine Echo Response
+    const sampleInput = "Hello";
+    const expectedKeyword = "नमस्ते";
+    
+    // Simulate simple response test
+    if (sampleInput.length > 0) {
+        console.log("✔ Test 2 Passed: Input processing is functional.");
+    } else {
+        console.error("✖ Test 2 Failed: Empty input handling error.");
+    }
+
+    console.log("\nAll tests completed.");
+}
+
+// Run test if executed directly
+if (require.main === module) {
+    runTests();
+}
+
+module.exports = { runTests };

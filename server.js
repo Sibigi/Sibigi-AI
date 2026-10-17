@@ -32,6 +32,7 @@ app.post('/api/chat', (req, res) => {
 });
 
 // Start Server
-app.listen(PORT, () => {
+ app.listen(PORT, '0.0.0.0', () => type karein.
+
     console.log(`Sibigi-AI Server is running on http://localhost:${PORT}`);
 });
